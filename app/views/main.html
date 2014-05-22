@@ -9,24 +9,31 @@
   </p>
 </div>
 
-<div class="row marketing">
-  <h4>What you want?</h4>
-  <p>
-   Recipe Selector
-  </p>
+<div ng-app="pearsonApp">
+  <div ng-controller="RecipeCtrl">
+    <div class="row marketing">
+    <h4>What you want?</h4>
+    <select ng-model="myRecipe" ng-options="recipe for recipe in recipes">
+      <option value="">-- choose a recipe --</option>
+    </select>
+  </div>
 
-  <h4>What you doing fatty?</h4>
-  <p>
-    Fad type here
-  </p>
+  <div ng-controller="DietCtrl">
+    <h4>What you doing?</h4>
+    <select ng-model="myDiet" ng-options="diet for diet in diets">11
+      <option value="">-- choose diet type --</option>
+    </select>
+  </div>
 
-  <h4>Allowed</h4>
-  <p>yes/no</p>
-  <p><a class="btn btn-lg btn-success" ng-href="#">give me recipe</a></p>
-  <p><a class="btn btn-lg btn-success" ng-href="#">give me excercise</a></p>
+    <h4>Allowed</h4>
+    <p>yes/no</p>
+    <p><a class="btn btn-lg btn-success" ng-href="#">give me recipe</a></p>
+    <p><a class="btn btn-lg btn-success" ng-href="#">give me exercise</a></p>
 
-</div>
+  </div>
 
-<div class="footer">
-  <p><span class="glyphicon glyphicon-heart"></span> I AM ROB ANDERSON 2014</p>
+  <div class="footer">
+    <p><span class="glyphicon glyphicon-heart"></span> I AM ROB ANDERSON 2014</p>
+  </div>
+
 </div>
