@@ -2,6 +2,5 @@
 
 angular.module('toasterApp')
   .controller 'ChoiceCtrl', ($scope) ->
-    $scope.firstChoice = 'Toast'
-      
-    
+    $scope.breadProducts = ["Toast", "Muffins", "Bagels"]
+    $scope.firstChoice = $scope.breadProducts[Math.floor(Math.random() * $scope.breadProducts.length)]
