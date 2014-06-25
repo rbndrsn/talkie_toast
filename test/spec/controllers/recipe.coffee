@@ -3,7 +3,7 @@
 describe 'Controller: RecipeCtrl', ->
 
   # load the controller's module
-  beforeEach module 'pearsonApp'
+  beforeEach module 'toasterApp'
 
   RecipeCtrl = {}
   scope = {}

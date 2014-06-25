@@ -1,39 +1,25 @@
 <div class="header">
-  <h3 class="text-muted">Can I Eat..?</h3>
+ <!--  <ul class="nav nav-pills pull-right">
+  </ul>
+  <h3 class="text-muted">Talkie Toaster</h3> -->
 </div>
 
-<div class="jumbotron">
-  <h1>Fussy Eater?</h1>
-  <h2>We can help, but you still can't have your cake and eat it.</h2>
+<div class="jumbotron" ng-controller="ChoiceCtrl">
+  <h2>Would you like any {{firstChoice}}?</h2>
   <p class="lead">
+    <img src="images/toaster.png" alt="I'm Talkie Toaster"><br>
   </p>
+  <div class="btn-group">
+    <button type="button" class="btn btn-success">Yes</button>
+  </div>
+
+  <div class="btn-group">
+    <button type="button" class="btn btn-danger">No</button>
+  </div>
 </div>
 
-<div ng-app="pearsonApp">
-  <div ng-controller="RecipeCtrl">
-    <div class="row marketing">
-    <h4>What you want?</h4>
-    <select ng-model="myRecipe" ng-options="recipe for recipe in recipes">
-      <option value="">-- choose a recipe --</option>
-    </select>
-  </div>
-
-  <div ng-controller="DietCtrl">
-    <h4>What you doing?</h4>
-    <select ng-model="myDiet" ng-options="diet for diet in diets">11
-      <option value="">-- choose diet type --</option>
-    </select>
-  </div>
-
-    <h4>Allowed</h4>
-    <p>yes/no</p>
-    <p><a class="btn btn-lg btn-success" ng-href="#">give me recipe</a></p>
-    <p><a class="btn btn-lg btn-success" ng-href="#">give me exercise</a></p>
-
-  </div>
-
-  <div class="footer">
-    <p><span class="glyphicon glyphicon-heart"></span> I AM ROB ANDERSON 2014</p>
-  </div>
-
+<div class="footer">
+  <p><span class="glyphicon glyphicon-gift"></span> Made with Love by Pearson Developer Relations
+  <a href="http://www.twitter.com/pearsonapi">@PearsonAPI</a></p>
 </div>
+

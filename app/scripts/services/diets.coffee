@@ -1,5 +1,5 @@
 'use strict'
 
-angular.module('pearsonApp')
+angular.module('toasterApp')
   .service 'Diets', ->
     # AngularJS will instantiate a singleton by calling "new" on this function

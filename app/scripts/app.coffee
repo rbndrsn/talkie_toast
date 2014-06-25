@@ -1,7 +1,7 @@
 'use strict'
 
 angular
-  .module('pearsonApp', [
+  .module('toasterApp', [
     'ngCookies',
     'ngResource',
     'ngSanitize',
