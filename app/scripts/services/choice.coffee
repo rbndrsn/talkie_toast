@@ -2,4 +2,5 @@
 
 angular.module('toasterApp')
   .service 'choice', ->
-  	choice = 'choice'
+  	choice = {"a", "b"}
+  	# console.log choice

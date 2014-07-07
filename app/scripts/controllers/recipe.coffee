@@ -3,7 +3,7 @@
 angular.module('toasterApp')
   .controller 'RecipeCtrl', ($scope, choice) ->
     i = 0
-    # $scope.a = []
+    console.log choice
     $scope.newBreadChoice = ""
     $scope.breadChoice = {name:'Toast', recipe:"You don't need a recipe for toast!!", showRecipe: false}
     $scope.breadProducts = [{name:'Crumpets', recipe:"you cook crumpet", showRecipe: false},
