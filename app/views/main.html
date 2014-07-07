@@ -3,9 +3,9 @@
 
 <div class="jumbotron" ng-controller="RecipeCtrl">
 
-  <h2>Would you like any {{breadChoice.name}}?</h2>
+  <h2>Would you like any {{breadChoice.name}}? {{choice}}</h2>
   <p class="lead">
-    <img src="images/toaster.png" alt="I'm Talkie breadChoiceer"><br>
+    <img src="images/toaster.png" alt="I'm Talkie Toaster" title="I toast, therefor I am"><br>
   </p>
   <div class="btn-group" ng-click="breadChoice.showRecipe = true">
     <button type="button" class="btn btn-success">Yes, show me {{breadChoice.name}}</button>
@@ -21,8 +21,6 @@
   </div>
 
 </div>
-
-
 
 <div class="footer">
   <p><span class="glyphicon glyphicon-gift"></span> Made with Love by Pearson Developer Relations
