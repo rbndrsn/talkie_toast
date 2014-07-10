@@ -20,7 +20,3 @@ angular.module('toasterApp')
       i++
       if i >= $scope.BreadChoices.length
         i = 0
-
-
-
-    
