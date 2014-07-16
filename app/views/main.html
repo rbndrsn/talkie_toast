@@ -8,11 +8,11 @@
     <img src="images/toaster.png" alt="I'm Talkie Toaster" title="I toast, therefor I am"><br>
   </p>
   <div class="btn-group-vertical list-group" ng-click="breadChoice.showRecipe = true">
-    <button type="button" class="btn btn-success">Yes, show me the {{breadChoice.name}} ingredients</button>
+    <button type="button" class="btn btn-success">Yes</button>
   </div>
 
-  <div class="btn-group">
-    <button type="button" class="btn btn-danger" ng-click="newBreadChoice()">No thank you</button>
+  <div>
+    <button type="button" class="btn btn-danger" ng-click="newBreadChoice()">No</button>
   </div>
   <hr>
 
@@ -23,7 +23,6 @@
       {{ingredient}}
       </li>
     </ul>
-    <!-- Ingredients:<p>{{breadChoice.ingredients}}</p> -->
     <p>{{breadChoice.recipe}}</p>
   </div>
 
